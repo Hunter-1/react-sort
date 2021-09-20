@@ -1,8 +1,13 @@
 import React from 'react';
 import './App.css';
 import createArray from "./components/shuffle";
+import quick_sort from "./components/quick_sort";
 
-console.log(createArray(50))
+const length = 20;
+let array = createArray(length)
+
+console.log(array)
+console.log(quick_sort(array))
 
 function App() {
   return (
