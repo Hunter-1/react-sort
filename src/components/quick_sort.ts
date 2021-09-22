@@ -8,9 +8,6 @@ export default function quick_sort(array: number[]): number[] {
     for (i = 0; i < array.length; i++) {
         (array[i] < pivot ? left : right).push(array[i]);
     }
-    //console.log(pivot, JSON.stringify(array), JSON.stringify(left), JSON.stringify(right));
-
-    // prevent looping forever
     if (!left.length && right.every(function (v) { return v === pivot; })) {
         return right;
     }
